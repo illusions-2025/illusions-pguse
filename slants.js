@@ -43,10 +43,12 @@ function drawCircles(stillColour){
     let circlewidth = linewidth/16;
     let x = offset + circlewidth/2;
     let y = 100;
-    stroke(0);
-    fill(0);
+    let curr = 0;
     for (i=0; i<16; i++){
+        stroke(curr*255);
+        fill(curr*255);
         ellipse(x+i*circlewidth,y,circlewidth,circlewidth);
+        curr = (curr+1)%2;
     }
     
 }
@@ -54,6 +56,7 @@ function drawCircles(stillColour){
 //if stillColour is truthy, image will be black or white
 //but not both (ie no illusion)
 function drawLines(stillColour){
+    let x = 
 
 }
 //this function is called once every 60 seconds unless
