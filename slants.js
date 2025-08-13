@@ -59,8 +59,6 @@ function drawCircles(stillColour){
 //if stillColour is truthy, image will be black or white
 //but not both (ie no illusion)
 function drawLines(stillColour){
-    let x = 
-
 }
 //this function is called once every 60 seconds unless
 //the noLoop() function is called
