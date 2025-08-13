@@ -53,7 +53,6 @@ function drawCircles(stillColour){
             curr = (curr+1)%2;
         }
     }
-
 }
 
 //if stillColour is truthy, image will be black or white
@@ -65,7 +64,9 @@ function drawLines(stillColour){
     let rectheight = circlewidth/20;
     let x = offset + circlewidth;
     let y = offset - (circlewidth/2) + rectheight/2;
-    rect(x,y,circlewidth/2,rectheight);
+    for (i=0; i<15;i++){
+        rect(x+i*circlewidth,y,circlewidth/2,rectheight);
+    }
 }
 //this function is called once every 60 seconds unless
 //the noLoop() function is called
