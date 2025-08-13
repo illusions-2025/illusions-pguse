@@ -42,7 +42,7 @@ function drawCircles(stillColour){
     let linewidth = width-(2*offset);
     let circlewidth = linewidth/16;
     let x = offset + circlewidth/2;
-    let y = 100;
+    let y = offset;
     let curr = stillColour%2;
     for (i=0; i<16; i++){
         stroke(curr*255);
@@ -59,6 +59,13 @@ function drawCircles(stillColour){
 //if stillColour is truthy, image will be black or white
 //but not both (ie no illusion)
 function drawLines(stillColour){
+    let offset = 100;
+    let linewidth = width - (2*offset);
+    let circlewidth = linewidth/16;
+    let rectheight = circlewidth/20;
+    let x = offset + circlewidth;
+    let y = offset - (circlewidth/2) + rectheight/2;
+    rect(x,y,rectheight,circlewidth/2);
 }
 //this function is called once every 60 seconds unless
 //the noLoop() function is called
