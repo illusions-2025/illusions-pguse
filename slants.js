@@ -65,7 +65,7 @@ function drawLines(stillColour){
     let rectheight = circlewidth/20;
     let x = offset + circlewidth;
     let y = offset - (circlewidth/2) + rectheight/2;
-    rect(x,y,rectheight,circlewidth/2);
+    rect(x,y,circlewidth/2,rectheight);
 }
 //this function is called once every 60 seconds unless
 //the noLoop() function is called
